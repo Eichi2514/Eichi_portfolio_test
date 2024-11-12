@@ -6,9 +6,6 @@
     <title>Eichi portfolio</title>
 
     <style>
-        img {
-        }
-
         /* 배경색 */
         body {
             margin: 0;
@@ -71,7 +68,7 @@
         /* 시작 버튼 */
         .start_btn_text {
             display: inline-block;
-            padding: 0px 20px 0px 20px;
+            padding: 0 20px 0 20px;
             border: 2px solid;
             font-family: "CHOGOONCHICKENSCRATCHV3";
             font-size: 2rem;
@@ -101,6 +98,10 @@
             left: 125px;
             top: 200px;
             z-index: 10;
+        }
+
+        .p1t, .p2t, .p3t{
+            border: 1px solid;
         }
 
         /* 폰트2 양식 */
@@ -663,6 +664,13 @@
             }
         }
 
+        .portfolio{
+            position: absolute;
+            left: calc(50% - 720px);
+            top: 919px;
+            width: 1440px;
+            height: 919px;
+        }
     </style>
 </head>
 <body>
@@ -717,7 +725,7 @@
     <!-- 캐릭터 선택 알림창 배경 -->
     <div class="choice_t absolute">
         <!-- 캐릭터1(드래곤) 선택창 -->
-        <div class="p1t hidden text-center bg-white rounded-2xl bo">
+        <div class="p1t hidden text-center bg-white rounded-2xl">
             <!-- 캐릭터1(드래곤) 선택 알림창 -->
             <div class="p1t_ti p-3">용 캐릭터를 선택하시겠습니까?</div>
             <!-- 캐릭터1(드래곤) 선택 버튼 배경 -->
@@ -729,7 +737,7 @@
             </div>
         </div>
         <!-- 캐릭터2(수달) 선택창 -->
-        <div class="p2t hidden text-center bg-white rounded-2xl bo">
+        <div class="p2t hidden text-center bg-white rounded-2xl">
             <!-- 캐릭터2(수달) 선택 알림창 -->
             <div class="p2t_ti p-3">수달 캐릭터를 선택하시겠습니까?</div>
             <!-- 캐릭터2(수달) 선택 버튼 배경 -->
@@ -741,7 +749,7 @@
             </div>
         </div>
         <!-- 캐릭터3(유령) 선택창 -->
-        <div class="p3t hidden text-center bg-white rounded-2xl bo">
+        <div class="p3t hidden text-center bg-white rounded-2xl">
             <!-- 캐릭터3(유령) 선택 알림창 -->
             <div class="p3t_ti p-3">유령 캐릭터를 선택하시겠습니까?</div>
             <!-- 캐릭터3(유령) 선택 버튼 배경 -->
@@ -952,6 +960,7 @@
         </div>
     </div>
 </div>
+<div class="portfolio"></div>
 <script>
     $(document).ready(function () {
         console.clear();
